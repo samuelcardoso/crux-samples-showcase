@@ -37,7 +37,9 @@
 		<gwt:HTML id="descriptionCointainer"/>
 		
 		<center>
-			<faces:button id="buttonShowCode" onSelect="mainController.viewSourceCode" text="${messages_core.viewSourceCode}" style="margin:10px"/>
+			<crux:ifDevice size="large">
+				<faces:button id="buttonShowCode" onSelect="mainController.viewSourceCode" text="${messages_core.viewSourceCode}" style="margin:10px"/>
+			</crux:ifDevice>
 		</center>
 	</div>
 </t:template>

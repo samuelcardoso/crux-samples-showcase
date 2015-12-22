@@ -38,7 +38,7 @@ public abstract class LoadingCallback<T> implements Callback<T>
 	/**
 	 * Fecha uma popup de Dialog.
 	 */
-	private void closeWaitPopup()
+	protected void closeWaitPopup()
 	{
 		numChamadas--;
 		if(wait.isAttached() && wait.isShowing() && numChamadas == 0)
