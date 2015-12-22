@@ -27,6 +27,9 @@ public interface ShowcaseCoreMessages extends Messages
 	@DefaultMessage("Loading")
 	String loading();
 
+	@DefaultMessage("Too many calls to our GitHub API, please try again after 1 hour or access our GitHub link.")
+	String maxCalls();
+	
 //	@DefaultMessage("Enable Log")
 	@DefaultMessage("Enable Log")
 	String enableLog();
